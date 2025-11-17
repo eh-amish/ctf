@@ -1,4 +1,0 @@
-sudo cp /var/www/Infector.htb/public_html/index.html /var/www/Infector.htb/public_html/index.html.bak
-sudo perl -0777 -pe 's#<span[^>]*class="admin-hint"[^>]*>.*?</span>##is' -i /var/www/Infector.htb/public_html/index.html
-sudo systemctl reload apache2
-echo "Removed admin hint. Backup saved to index.html.bak"
